@@ -1,0 +1,32 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". main main ."
+      ". . picture picture"
+      "form form map map";
+  }
+  
+  .form { grid-area: form; }
+  
+  .main { grid-area: main; }
+  
+  .picture { grid-area: picture; }
+  
+  .map { grid-area: map; }
+
+
+.mapouter{
+    position: relative; 
+    text-align: right;
+    width: 0px;
+    height: 0px;
+}
+
+.gmap_canvas{
+    overflow: hidden;
+    background: none!important;
+    height:600px;
+    width:1400px;}
